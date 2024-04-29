@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  align-items: center;
+  justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-weight: 900;
+  font-style: italic;
+  color: darkslategrey;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 180px;
+  padding: 20px;
+  gap: 20px;
+  border: 0.3px solid rgba(14, 14, 14, 0.733);
+  width: 400px;
+  height: 300px;
+  border-radius: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.height-in, .weight-in {
+  gap: 5px;
+}
+
+.input input {
+  width: 180px;
+  height: 30px;
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(191, 189, 189);
+  color: black;
+}
+
+input:focus {
+  outline-color: transparent;
+}
+
+.output {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px;
+  font-size: large;
+}
+
+.text {
+  font-weight: 800;
+}
+.final-output {
+  color:green;
+  font-weight: 600;
+}
+
+.status {
+  color: green;
 }
